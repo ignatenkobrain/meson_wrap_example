@@ -6,8 +6,8 @@ if enet_dep.found()
   enet_lib = []
 else
   enet_sp = subproject('enet')
-  enet_inc = enet_sp.get_variable('enet_inc')
-  enet_lib = enet_sp.get_variable('enet_lib')
+  enet_inc = enet_sp.get_variable('incdir')
+  enet_lib = enet_sp.get_variable('enetlib')
 endif
 
 executable(
